@@ -24,10 +24,13 @@
 </style>
 </head>
 <body>
-<video autoplay muted id="myVideo">
+<video autoplay loop muted playsinline class="video-autoplay">
+<source src="./WarningPage.mp4" type="video/mp4">
+</video>
+<!--    <video autoplay muted id="myVideo">
     <source src="./WarningPage.mp4" type="video/mp4">
     Your browser does not support the video tag.
-</video>
+</video>-->
 <script>
     var video = document.getElementById('myVideo');
     // 비디오가 재생되지 않는 경우나 로드되지 않은 경우를 감지
