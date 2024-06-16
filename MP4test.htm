@@ -1,36 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Credential Phishing</title>
-<!--<style>
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    video {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-    }
-</style>
-</head>-->
+</head>
 <body>
-<!--<video autoplay loop muted playsinline class="video-autoplay">
-<source src="./WarningPage.mp4" type="video/mp4">
-</video>
-<video autoplay muted id="myVideo">
-    <source src="./WarningPage.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>-->
 
 var varUA = navigator.userAgent.toLowerCase();
 
@@ -39,23 +14,9 @@ var varUA = navigator.userAgent.toLowerCase();
      window.location.href = "./WarningPage.Png";
 else{
      <video autoplay loop muted playsinline class="video-autoplay">
-<source src="./WarningPage.mp4" type="video/mp4">
+    <source src="./WarningPage.mp4" type="video/mp4">
     }
 } 
     
-<!--   
-    <script>
-    var video = document.getElementById('myVideo');
-    // 비디오가 재생되지 않는 경우나 로드되지 않은 경우를 감지
-    video.addEventListener('error', function(){
-        window.location.href = "./WarningPage.Png"; // 재생이나 로드 오류가 발생한 경우 리디렉션할 URL
-    });
-    // 비디오가 재생이 끝난 경우
-    video.addEventListener('ended', function(){
-        window.location.href = "./WarningPage.Png"; // 비디오 재생이 끝난 후 리디렉션할 URL
-    });
-</script>
--->
-
 </body>
 </html>
