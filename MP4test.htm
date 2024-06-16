@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Credential Phishing</title>
-<style>
+<!--<style>
     html, body {
         margin: 0;
         padding: 0;
@@ -22,21 +22,25 @@
         height: auto;
     }
 </style>
-</head>
+</head>-->
 <body>
-<video autoplay loop muted playsinline class="video-autoplay">
+<!--<video autoplay loop muted playsinline class="video-autoplay">
 <source src="./WarningPage.mp4" type="video/mp4">
 </video>
 <video autoplay muted id="myVideo">
     <source src="./WarningPage.mp4" type="video/mp4">
     Your browser does not support the video tag.
-</video>
+</video>-->
 
 var varUA = navigator.userAgent.toLowerCase();
 
  if ( varUA.indexOf("iphone") > -1 || varUA.indexOf("ipad") > -1 ||varUA.indexOf("ipod") > -1 ) {
     //IOS
      window.location.href = "./WarningPage.Png";
+else{
+     <video autoplay loop muted playsinline class="video-autoplay">
+<source src="./WarningPage.mp4" type="video/mp4">
+    }
 } 
     
 <!--   
