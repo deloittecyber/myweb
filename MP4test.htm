@@ -38,10 +38,11 @@ else()
     <source src="./WarningPage.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
-
+<script>
     document.querySelector('video').addEventListener('ended', function(){
         this.pause();
     });
+</script>
 //alert('안드로이드 입니다.');
 }
 </script>
