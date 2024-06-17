@@ -23,16 +23,6 @@
 </style>
 </head>
 <body>
-<video autoplay muted style="width: 100%; height: 100%;">
-    <source src="./WarningPage.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-<script>
-    document.querySelector('video').addEventListener('ended', function(){
-        this.pause();
-    });
-</script>
-
 <script>
 var varUA = navigator.userAgent.toLowerCase();	//userAgent 값을 받아서 소문자 형태로 불러온다.
 //alert(varUA);
@@ -44,6 +34,14 @@ if(varUA.match("iphone") != null || varUA.match("ipad") != null || varUA.match("
 
 else()
 {
+<video autoplay muted style="width: 100%; height: 100%;">
+    <source src="./WarningPage.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+    document.querySelector('video').addEventListener('ended', function(){
+        this.pause();
+    });
 //alert('안드로이드 입니다.');
 }
 </script>
