@@ -4,11 +4,24 @@
 </head>
 <body>
 <script language="javascript"> 
-        <video autoplay muted style="width: 100%; height: 100%;">
-              <source src="./WarningPage.mp4" type="video/mp4">
-      </video>
 
+<video autoplay muted style="width: 100%; height: 100%;">
+    <source src="./WarningPage.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
+ <script>
+    document.querySelector('video').addEventListener('ended', function(){
+        this.pause();
+    });
+</script>
+
+var agent = navigator.userAgent.toLowerCase();
+
+        if(agent.indexOf("iphone") > -1 || agent.indexOf("ipad") > -1 || agent.indexOf("ipod") > -1) {
+       //location.href='./WarningPage.Png";
+            window.location.href = "./WarningPage.Png"; 
+      }
 
 </script>
 </body>
