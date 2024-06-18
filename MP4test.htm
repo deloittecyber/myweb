@@ -28,18 +28,21 @@
     Your browser does not support the video tag.
 </video>
 	
-<script>
-var varUA = navigator.userAgent.toLowerCase();
-if(varUA.match("iphone") != null || varUA.match("ipad") != null || varUA.match("ipod") != null)
-{
-	window.location.href = './WarningPage.png';
-}
+  <script>
+    var varUA = navigator.userAgent.toLowerCase();
+    alert(varUA);
+    
+    if(varUA.match('android') != null)
+    {
+      alert('안드로이드 입니다.');
+    }
+    
+    else if(varUA.match("iphone") != null || varUA.match("ipad") != null || varUA.match("ipod") != null)
+    {
+      alert('아이폰 입니다.');
+      	window.location.href = 'https://deloittecyber.github.io/myweb/WarningPage.png';
+    }
 
-else()
-{
-
-}
-</script>
 
 </body>
 </html>
